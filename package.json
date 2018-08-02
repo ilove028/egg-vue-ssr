@@ -1,0 +1,35 @@
+{
+  "name": "egg-vue-ssr",
+  "version": "0.0.1",
+  "description": "Egg Vue SSR framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint app/** config/**",
+    "dev": "egg-bin dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilove028/egg-vue-ssr.git"
+  },
+  "keywords": [
+    "SSR",
+    "VUE"
+  ],
+  "author": "mx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilove028/egg-vue-ssr/issues"
+  },
+  "homepage": "https://github.com/ilove028/egg-vue-ssr#readme",
+  "dependencies": {
+    "egg": "^2.9.1",
+    "vue": "^2.5.17",
+    "vue-server-renderer": "^2.5.17"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "egg-bin": "^4.8.1",
+    "eslint": "^5.2.0"
+  }
+}
