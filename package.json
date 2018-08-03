@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint app/** config/**",
+    "eslint": "eslint --ext .js,.vue app client config",
     "dev": "egg-bin dev"
   },
   "repository": {
@@ -25,11 +25,14 @@
   "dependencies": {
     "egg": "^2.9.1",
     "vue": "^2.5.17",
-    "vue-server-renderer": "^2.5.17"
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.17",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
     "egg-bin": "^4.8.1",
-    "eslint": "^5.2.0"
+    "eslint": "^5.2.0",
+    "eslint-plugin-vue": "^4.7.1"
   }
 }

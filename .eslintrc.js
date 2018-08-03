@@ -5,7 +5,7 @@ module.exports = {
         "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended"],
     "parser": "babel-eslint",
     "parserOptions": {
         "sourceType": "module"
@@ -24,7 +24,7 @@ module.exports = {
             "single"
         ],
         "semi": [
-            "error",
+            "off",
             "always"
         ]
     }
