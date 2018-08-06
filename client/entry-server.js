@@ -4,6 +4,7 @@ export default context => {
   return new Promise((resolve, reject) => {
     const { app, router } = createApp(context);
     // 设置服务器端 router 的位置
+    console.info(`URL: ${JSON.stringify(context)}`);
     router.push(context.url);
     // 等到 router 将可能的异步组件和钩子函数解析完
     router.onReady(() => {
