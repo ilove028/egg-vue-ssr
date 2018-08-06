@@ -1,5 +1,4 @@
 const path = require('path');
-const Vue = require('vue');
 const fs = require('fs');
 
 module.exports = (options = {}) => {
@@ -19,7 +18,6 @@ module.exports = (options = {}) => {
     try {
       ctx.body = await render.renderToString(Object.assign(ctx, { title: '测试标题', meta: '<meta charset="utf-8">' }));
     } catch (e) {
-      console.error(e);
       await next();
     }
   };
