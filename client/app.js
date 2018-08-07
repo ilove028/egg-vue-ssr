@@ -2,6 +2,9 @@ import Vue from 'vue';
 import App from './App.vue';
 import { createRouter } from './router/index';
 import { createStore } from './store/index';
+import plugin from './plugin';
+
+Vue.use(plugin);
 
 export function createApp () {
   const router = createRouter();

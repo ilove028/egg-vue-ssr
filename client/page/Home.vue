@@ -12,12 +12,9 @@
   </div>
 </template>
 <script>
-  import home from '../store/module/home';
-
   export default {
     asyncData ({ store }) {
-      console.info('Home async data invoked.');
-      store.registerModule('home', home);
+      // store.registerModule('home', home);
       return store.dispatch('home/queryHomeNews')
     },
     computed: {
@@ -25,8 +22,13 @@
         return this.$store.state.home.news.data;
       }
     },
+    mounted () {
+      if (this.news[0]) {
+
+      }
+    },
     destroyed () {
-      this.$store.unregisterModule('home');
+      // this.$store.unregisterModule('home');
     }
   }
 </script>
