@@ -34,10 +34,18 @@ module.exports = {
         },
         extractCSS: true
       }
-    },{
+    },
+    {
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: /node_modules/
+    },
+    {
+      test: /\.css$/,
+      use: ExtractTextPlugin.extract({
+        use: 'css-loader',
+        fallback: 'vue-style-loader'
+      })
     }]
   },
   plugins
