@@ -16,6 +16,7 @@
 
   export default {
     asyncData ({ store }) {
+      console.info('Home async data invoked.');
       store.registerModule('home', home);
       return store.dispatch('home/queryHomeNews')
     },

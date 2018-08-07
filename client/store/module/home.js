@@ -17,9 +17,14 @@ export default {
             const data = [{
               title: 'News 1',
               content: 'Content 1'
-            }, {
+            },
+            {
               title: 'News 2',
               content: 'Content 2'
+            },
+            {
+              title: 'News 3',
+              content: 'Content 3'
             }];
             commit('queryHomeNewsSuccess', data);
             resolve(data);
